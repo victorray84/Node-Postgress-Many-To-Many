@@ -8,8 +8,8 @@ const client = new Client({
   database: process.env.DATABASE_NAME,
   password: process.env.DATABASE_PASSWORD,
   port: process.env.DATABASE_PORT,
-  //ssl: { rejectUnauthorized: false },
-  ssl: isProduction,
+  ssl: { rejectUnauthorized: false },
+  //ssl: isProduction,
 });
 
 client.connect();
