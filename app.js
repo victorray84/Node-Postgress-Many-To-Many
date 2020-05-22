@@ -1,10 +1,10 @@
+require("dotenv").config();
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const morgan = require("morgan");
 const tagRoutes = require("./routes/tags");
 const messagesRoutes = require("./routes/messages");
-require("dotenv").config();
 
 app.use(morgan("tiny"));
 app.use(bodyParser.json());
