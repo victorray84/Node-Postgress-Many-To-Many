@@ -32,13 +32,15 @@ app.use("/messages", messagesRoutes);
 //   });
 // }
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("build"));
+if (process.env.NODE_ENV === 'production') {
+  // Exprees will serve up production assets
+  app.use(express.static('client/build'));
 
-  app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "build", "index.html"));
+  // Express serve up index.html file if it doesn't recognize route
+  const path = require('path');
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
   });
-}
 
 app.listen(process.env.PORT || 3000, () => {
   console.log("Getting started on port 3000!");
