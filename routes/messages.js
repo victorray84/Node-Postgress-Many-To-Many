@@ -53,30 +53,30 @@ router.get("/getMessageWithTags/:id", async (req, res, next) => {
       return next(err);
     }
 
-    var graduatesMap = {};
-    var graduates = [];
+    var messageMap = {};
+    var messages = [];
 
     message.rows.forEach((row) => {
       console.log(row);
-      var category = graduatesMap[row.text];
-      if (!category) {
-        category = {
+      var messageByName = messageMap[row.text];
+      if (!messageByName) {
+        messageByName = {
           id: row.id,
           name: row.text,
           tags: [],
         };
 
-        graduatesMap[row.text] = category;
-        graduates.push(category);
+        messageMap[row.text] = messageByName;
+        messages.push(category);
       }
 
-      category.tags.push({
+      messageByName.tags.push({
         id: row.tag_id,
         name: row.name,
       });
     });
 
-    res.json({ data: graduates });
+    res.json({ data: messages });
   } catch (error) {
     return next(error);
   }

@@ -23,7 +23,7 @@ router.post("/", async (req, res, next) => {
   }
 });
 
-router.post("/tagsWithMessages", async (req, res, next) => {
+router.post("/craetetagWithMessages", async (req, res, next) => {
   try {
     await db.query("BEGIN");
     console.log(req.body.tagname);
