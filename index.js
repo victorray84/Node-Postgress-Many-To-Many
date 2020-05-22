@@ -22,15 +22,14 @@ if (app.get("env") === "development") {
 
 // development error handler
 // will print stacktrace
-if (app.get("env") === "development") {
-  app.use((err, req, res, next) => {
-    res.status(err.status || 500);
-    return res.json({
-      message: err.message,
-      error: err,
-    });
+
+app.use((err, req, res, next) => {
+  res.status(err.status || 500);
+  return res.json({
+    message: err.message,
+    error: err,
   });
-}
+});
 
 if (process.env.NODE_ENV === "production") {
   // Exprees will serve up production assets
