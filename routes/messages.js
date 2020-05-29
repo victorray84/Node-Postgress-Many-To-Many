@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const db = require("../db");
 
-router.post("/messgaetags", async (req, res, next) => {
+router.post("/createMessageWithTags", async (req, res, next) => {
   try {
     await db.query("BEGIN");
 
