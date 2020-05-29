@@ -5,5 +5,5 @@ It's very hard to get Node.js Postgres many to many tutorials on internet. I use
 Here's the ER diagram:
 
 <img src="https://www.dropbox.com/s/8ule41ru6e44u4l/Diagram.png"/>
-![ScreenShot](https://www.dropbox.com/s/8ule41ru6e44u4l/Diagram.png)
+![alt text](https://www.dropbox.com/s/8ule41ru6e44u4l/Diagram.png)
   
