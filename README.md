@@ -4,5 +4,5 @@ It's very hard to get Node.js Postgres many to many tutorials on internet. I use
 
 Here's the ER diagram:
 
-![Image of Diagram](https://octodex.github.com/images/yaktocat.png)
+![Image of Diagram](https://www.dropbox.com/s/8ule41ru6e44u4l/Diagram.png?dl=0)
   
