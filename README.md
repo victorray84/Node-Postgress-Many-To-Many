@@ -4,5 +4,5 @@ It's very hard to get Node.js Postgres many to many tutorials on internet. I use
 
 Here's the ER diagram:
 
-![Image of Yaktocat](https://www.dropbox.com/s/8ule41ru6e44u4l/Diagram.png??raw=true)
+![Image of Yaktocat](https://github.com/victorray84/Node-Postgress-Many-To-Many/blob/master/Diagram.png)
   
